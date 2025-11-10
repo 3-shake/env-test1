@@ -1,0 +1,7 @@
+name: deploy_region_a
+on:
+  workflow_dispatch:
+
+jobs:
+  region_a:
+    uses: ./.github/workflows/echo_deployment.yaml

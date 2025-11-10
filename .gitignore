@@ -1,0 +1,12 @@
+# Virtual environments
+.venv
+
+# Other
+/tmp
+**/.DS_Store
+*.log
+.vscode/
+.env
+
+/.docker
+.actrc

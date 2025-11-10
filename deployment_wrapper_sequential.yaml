@@ -1,0 +1,14 @@
+name: deployment_wrapper_sequential
+
+on:
+  push:
+    branches:
+      - stg
+
+jobs:
+  region_a:
+    uses: ./.github/workflows/deploy_region_a.yaml
+
+  region_b:
+    needs: region_a
+    uses: ./.github/workflows/deploy_region_b.yaml

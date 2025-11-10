@@ -1,0 +1,17 @@
+name: echo_deployment
+
+on:
+  workflow_call:
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sleep 30 then run echo
+        run: |
+          sleep 30
+          echo "Job Succeeded"
