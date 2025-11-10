@@ -8,7 +8,9 @@ on:
 jobs:
   region_a:
     uses: ./.github/workflows/deploy_region_a.yaml
+    secrets: inherit
 
   region_b:
     needs: region_a
     uses: ./.github/workflows/deploy_region_b.yaml
+    secrets: inherit
