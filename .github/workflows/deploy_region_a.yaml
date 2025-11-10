@@ -6,3 +6,4 @@ on:
 jobs:
   region_a:
     uses: ./.github/workflows/echo_deployment.yaml
+    secrets: inherit
